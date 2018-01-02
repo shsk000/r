@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% for item in listItems %}
+
+<div>
+    <p>title: {{item.snippet.title}}</p>
+    <p>channelId: {{item.id}}</p>
+    <a href="/playlist/{{item.id}}">
+        <img src="{{item.snippet.thumbnails.default.url}}" alt="">
+    </a>
+</div>
+
+{% endfor %}
