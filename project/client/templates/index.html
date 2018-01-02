@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<div id="root" style="height: 100%"></div>
+<script src="http://repeattube.com:5001/manifest.js"></script>
+<script src="http://repeattube.com:5001/normalize.js"></script>
+<script src="http://repeattube.com:5001/vendor.js"></script>
+<script src="http://repeattube.com:5001/main.js"></script>
+{% if oauthUrl %}
+    <a href="{{ oauthUrl }}">oauth</a>
+{% else %}
+    <p>else</p>
+{% endif %}
+
